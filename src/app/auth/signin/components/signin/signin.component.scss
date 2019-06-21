@@ -1,0 +1,17 @@
+.signin-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  .title {
+    font-size: 18px;
+    color: gray;
+  }
+  .signin-form{
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+  }
+}

@@ -1,0 +1,19 @@
+<div class="signin-container">
+  <div class="title">Sign Up</div>
+  <div class="signin-form">
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Username</span>
+      </div>
+      <input type="text" class="form-control" placeholder="Username" [(ngModel)]="username" aria-label="Username">
+    </div>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Password</span>
+      </div>
+      <input type="text" class="form-control" placeholder="Username" [(ngModel)]="password" aria-label="Username">
+    </div>
+    <button class="btn btn-primary w-100 mb-3" (click)="signin()">Sign Up</button>
+    <button class="btn btn-secondary w-100" [routerLink]="'/auth/signin'">Back</button>
+  </div>
+</div>

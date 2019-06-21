@@ -1,0 +1,17 @@
+<div class="creator-container">
+  <h3>Add Creator</h3>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Name</span>
+    </div>
+    <input type="text" class="form-control" placeholder="Name" [(ngModel)]="name" aria-label="Username">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Country</span>
+    </div>
+    <input type="text" class="form-control" placeholder="Country" [(ngModel)]="country" aria-label="Username">
+  </div>
+  <button class="btn btn-primary" (click)="addCreator()">Save</button>
+  <button class="btn btn-secondary" [routerLink]="'/creators'">Back</button>
+</div>

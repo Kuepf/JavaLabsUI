@@ -1,0 +1,22 @@
+<button class="btn btn-primary mt-5 mb-3" [routerLink]="'/addcreator'">Add weapon</button>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Creator Name</th>
+      <th scope="col">Modification Name</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of weapons">
+      <th>{{item.id}}</th>
+      <td>{{item.creator.name}}</td>
+      <td>{{item.modification.country}}</td>
+      <td><button class="btn btn-secondary" (click)="editCreator(item)">Edit</button></td>
+      <td><button class="btn btn-secondary" (click)="deleteCreator(item)">Delete</button></td>
+    </tr>
+  </tbody>
+</table>
